@@ -1,0 +1,122 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        #about {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .about-text {
+            width: 60%;
+        }
+
+        .about-image {
+            width: 500px; 
+            height: 500px;
+            border-radius: 75%;
+            
+        }
+
+        .portfolio-item {
+            border: 1px solid #ccc;
+            margin: 1rem 0;
+7            padding: 1rem;
+        }
+
+     
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SAKTHIVARDHAN.S</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to My Portfolio</h2>
+        <p>A Showcase of my expertise,projects,and a creative journey in web development and designing.</p>
+    </section>
+
+    
+    <section id="about">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>I  am a passionate and driven individual with a strong foundation in mechatronics, web development, and entrepreneurship. With certifications in Arduino electronics, 3D printing, circular economy, and data analytics, I enjoy exploring the intersection of technology and business and I gained some knowledges through virtual internship at oasis infobyte in the web development domain My goal is to pursue a master’s degree in Mechatronics in Germany, where I can deepen my expertise in automation, robotics, and smart systems. I am always eager to learn, innovate, and collaborate on projects that push the boundaries of technology..</p>
+        </div>
+        <!-- Display your uploaded image -->
+        <img src="C:\Users\sakth\OneDrive\Desktop\113.jpg" class="about-image">
+    </section>
+
+    <section id="portfolio">
+        <h2>My Work</h2>
+        <div class="portfolio-item">
+            <h3>MY SKILLS</h3>
+            <p> I have a strong skill set in Web Development, HTML, C, and Microsoft Excel, along with experience in Landing Pages and Portfolio development from your internship at Oasis Infobyte. Your knowledge extends to Small Business, Circular Economy, and Arduino Electronics, reflecting your entrepreneurial mindset. Additionally, your proficiency in Tamil, English, Engineering, and Presentations showcases your versatility..</p>
+        </div>
+        <div class="portfolio-item">
+            <h3>INTERNSHIP</h3>
+            <p>I have completed my internship at CodSoft and am currently interning at Oasis Infobyte in Web Development and Designing, gaining hands-on experience in building and designing websites, creating user-friendly interfaces, and enhancing my technical skills in front-end and back-end development.".</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me:</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+</html>
