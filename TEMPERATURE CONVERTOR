@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Temperature Converter</title>
+    <style>
+        body {
+            font-family: Impact;
+            background-color: #73c2fb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .converter-container {
+            background-color: #ffecb3;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h2 {
+            color: #191970;
+        }
+        input {
+            padding: 25px;
+            margin: 10px 0;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            width: 80%;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #555555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="converter-container">
+    <h2>Temperature Converter</h2>
+    <p>Fahrenheit  to  Kelvin and Celsius:</p>
+
+    <p>
+        <label>Fahrenheit</label>
+        <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+    </p>
+    <p class="result">Kelvin: <span id="outputKelvin"></span></p>
+    <p class="result">Celsius: <span id="outputCelsius"></span></p>
+</div>
+
+<script>
+function temperatureConverter(valNum) {
+    valNum = parseFloat(valNum);
+    if (!isNaN(valNum)) {
+        document.getElementById("outputKelvin").innerHTML = ((valNum - 32) / 1.8) + 273.15;
+        document.getElementById("outputCelsius").innerHTML = (valNum - 32) / 1.8;
+    } else {
+        document.getElementById("outputKelvin").innerHTML = "";
+        document.getElementById("outputCelsius").innerHTML = "";
+    }
+}
+</script>
+
+</body>
+</html>
